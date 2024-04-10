@@ -1,4 +1,6 @@
-﻿namespace AgarIO_IT3A.Shared
+﻿using Newtonsoft.Json;
+namespace AgarIO_IT3A.Shared
+
 {
   public class Game
   {
@@ -23,7 +25,20 @@
 
         public string ToJson()
         {
-            return "";
+            return JsonConvert.SerializeObject(this);
+        }
+        
+        public static Game FromJson(string jsonData)
+        {
+            try
+            {
+                return JsonConvert.DeserializeObject<Game>(jsonData);
+            }
+            catch
+            {
+                return null;
+            }
+            
         }
   }
 }
