@@ -28,7 +28,7 @@ namespace AgarIO_IT3A.Shared
             return JsonConvert.SerializeObject(this);
         }
         
-        public static Game FromJson(string jsonData)
+        public static Game? FromJson(string jsonData)
         {
             try
             {
