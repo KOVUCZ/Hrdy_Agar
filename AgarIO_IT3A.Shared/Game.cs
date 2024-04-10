@@ -20,5 +20,10 @@
         {
             gameObjects.Add(food);
         }
+
+        public string ToJson()
+        {
+            return "";
+        }
   }
 }
