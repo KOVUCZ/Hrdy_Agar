@@ -8,5 +8,13 @@ namespace AgarIO_IT3A.Shared
 {
   public class Player: GameObject
   {
+        public string Name { get; set; }
+
+        public Player(string color, string name ) : base()
+        {
+            Color = color;
+            Location = new Point(0, 0);
+            Name = name;
+        }
   }
 }

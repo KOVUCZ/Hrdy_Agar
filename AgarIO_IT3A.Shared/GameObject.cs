@@ -8,6 +8,7 @@ namespace AgarIO_IT3A.Shared
 {
   public abstract class GameObject
   {
-    public Point Location { get; set; }
+   public Point Location { get; set; }
+   public string Color { get; set; }
   }
 }
